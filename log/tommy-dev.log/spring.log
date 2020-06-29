@@ -1,0 +1,783 @@
+2020-06-08 08:16:11.456  INFO 24548 --- [main] com.tommy.TommyApplication               : Starting TommyApplication on LAPTOP-J6PA615L with PID 24548 (D:\InterlliJ IDEA WorkSpace\tommy\target\classes started by tommy in D:\InterlliJ IDEA WorkSpace\tommy)
+2020-06-08 08:16:11.461 DEBUG 24548 --- [main] com.tommy.TommyApplication               : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-08 08:16:11.461  INFO 24548 --- [main] com.tommy.TommyApplication               : The following profiles are active: dev
+2020-06-08 08:16:11.945  INFO 24548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-08 08:16:11.963  INFO 24548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-06-08 08:16:12.418  INFO 24548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-08 08:16:12.425  INFO 24548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-08 08:16:12.425  INFO 24548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-08 08:16:12.544  INFO 24548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-08 08:16:12.544  INFO 24548 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1047 ms
+2020-06-08 08:16:12.649  INFO 24548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-08 08:16:12.913  INFO 24548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-08 08:16:12.952  INFO 24548 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-08 08:16:13.009  INFO 24548 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-06-08 08:16:13.118  INFO 24548 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-08 08:16:13.209  INFO 24548 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-08 08:16:13.336  INFO 24548 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-08 08:16:13.343  INFO 24548 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-08 08:16:13.518  WARN 24548 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-08 08:16:13.670  INFO 24548 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-08 08:16:13.737  INFO 24548 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-06-08 08:16:13.924  INFO 24548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-08 08:16:13.925  INFO 24548 --- [main] com.tommy.TommyApplication               : Started TommyApplication in 2.864 seconds (JVM running for 3.997)
+2020-06-08 08:16:58.317  INFO 24548 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-08 08:16:58.318  INFO 24548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-08 08:16:58.328  INFO 24548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-06-08 08:17:03.483 DEBUG 24548 --- [http-nio-8080-exec-2] com.tommy.mapper.UserMapper.selectAdmin  : ==>  Preparing: SELECT * FROM t_user where uname=? and password=? and ifadmin=? 
+2020-06-08 08:17:03.496 DEBUG 24548 --- [http-nio-8080-exec-2] com.tommy.mapper.UserMapper.selectAdmin  : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String), 1(Integer)
+2020-06-08 08:17:03.506 DEBUG 24548 --- [http-nio-8080-exec-2] com.tommy.mapper.UserMapper.selectAdmin  : <==      Total: 1
+2020-06-08 08:17:04.578 DEBUG 24548 --- [http-nio-8080-exec-3] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-08 08:17:04.578 DEBUG 24548 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-08 08:17:04.578 DEBUG 24548 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-08 08:17:04.578 DEBUG 24548 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-08 08:17:04.578 DEBUG 24548 --- [http-nio-8080-exec-3] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-08 08:17:04.578 DEBUG 24548 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-08 08:17:04.581 DEBUG 24548 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-08 08:17:04.583 DEBUG 24548 --- [http-nio-8080-exec-3] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-08 08:17:04.591 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:17:04.591 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-08 08:17:04.592 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.593 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:04.593 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-08 08:17:04.594 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.596 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:17:04.596 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-08 08:17:04.597 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.598 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:04.598 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-08 08:17:04.599 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.601 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:04.601 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-08 08:17:04.604 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.605 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:17:04.606 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-08 08:17:04.608 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.608 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:04.609 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-08 08:17:04.610 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.611 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:04.611 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-08 08:17:04.613 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.614 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:04.614 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-08 08:17:04.615 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.615 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:04.616 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-08 08:17:04.617 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.618 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:04.618 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-08 08:17:04.619 DEBUG 24548 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:04.620 DEBUG 24548 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-08 08:17:09.031 DEBUG 24548 --- [http-nio-8080-exec-1] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-08 08:17:09.032 DEBUG 24548 --- [http-nio-8080-exec-8] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-08 08:17:09.032 DEBUG 24548 --- [http-nio-8080-exec-5] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-08 08:17:09.032 DEBUG 24548 --- [http-nio-8080-exec-1] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-08 08:17:09.032 DEBUG 24548 --- [http-nio-8080-exec-8] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-08 08:17:09.032 DEBUG 24548 --- [http-nio-8080-exec-5] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-08 08:17:09.034 DEBUG 24548 --- [http-nio-8080-exec-1] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-08 08:17:09.034 DEBUG 24548 --- [http-nio-8080-exec-8] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-08 08:17:09.040 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:17:09.040 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-08 08:17:09.041 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.042 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.042 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-08 08:17:09.043 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.044 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:17:09.044 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-08 08:17:09.045 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.046 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.046 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-08 08:17:09.048 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.048 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.049 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-08 08:17:09.052 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.052 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:17:09.053 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-08 08:17:09.054 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.055 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.055 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-08 08:17:09.056 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.057 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.057 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-08 08:17:09.058 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.059 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.059 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-08 08:17:09.060 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.063 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.063 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-08 08:17:09.064 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.065 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.065 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-08 08:17:09.067 DEBUG 24548 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.067 DEBUG 24548 --- [http-nio-8080-exec-5] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-08 08:17:09.760 DEBUG 24548 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-08 08:17:09.760 DEBUG 24548 --- [http-nio-8080-exec-7] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-08 08:17:09.760 DEBUG 24548 --- [http-nio-8080-exec-7] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-08 08:17:09.760 DEBUG 24548 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-08 08:17:09.761 DEBUG 24548 --- [http-nio-8080-exec-4] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-08 08:17:09.761 DEBUG 24548 --- [http-nio-8080-exec-4] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-08 08:17:09.762 DEBUG 24548 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-08 08:17:09.762 DEBUG 24548 --- [http-nio-8080-exec-7] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-08 08:17:09.770 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:17:09.770 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-08 08:17:09.771 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.771 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.772 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-08 08:17:09.773 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.773 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:17:09.774 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-08 08:17:09.775 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.775 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.775 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-08 08:17:09.777 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.777 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.778 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-08 08:17:09.780 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.781 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:17:09.781 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-08 08:17:09.782 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.783 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.783 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-08 08:17:09.785 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.786 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.786 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-08 08:17:09.788 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.788 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.789 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-08 08:17:09.790 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.791 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.791 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-08 08:17:09.792 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.793 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:17:09.793 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-08 08:17:09.795 DEBUG 24548 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:17:09.796 DEBUG 24548 --- [http-nio-8080-exec-4] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-08 08:17:13.234  WARN 24548 --- [http-nio-8080-exec-6] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [512] milliseconds.
+2020-06-08 08:17:13.240 ERROR 24548 --- [http-nio-8080-exec-6] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/uploadimg, Exception : {}
+
+java.io.IOException: org.apache.tomcat.util.http.fileupload.FileUploadException: Cannot write uploaded file to disk!
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:122)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:256)
+	at com.tommy.controller.FileController.uploadImg(FileController.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.tomcat.util.http.fileupload.FileUploadException: Cannot write uploaded file to disk!
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:396)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:120)
+	... 52 common frames omitted
+
+2020-06-08 08:17:13.251  WARN 24548 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-08 08:17:24.800 ERROR 24548 --- [http-nio-8080-exec-9] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/uploadimg, Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:213)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:422)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:110)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:395)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-06-08 08:18:43.926  INFO 29324 --- [main] com.tommy.TommyApplication               : Starting TommyApplication on LAPTOP-J6PA615L with PID 29324 (D:\InterlliJ IDEA WorkSpace\tommy\target\classes started by tommy in D:\InterlliJ IDEA WorkSpace\tommy)
+2020-06-08 08:18:43.928 DEBUG 29324 --- [main] com.tommy.TommyApplication               : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-08 08:18:43.929  INFO 29324 --- [main] com.tommy.TommyApplication               : The following profiles are active: dev
+2020-06-08 08:18:44.366  INFO 29324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-08 08:18:44.381  INFO 29324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2020-06-08 08:18:44.779  INFO 29324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-08 08:18:44.784  INFO 29324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-08 08:18:44.785  INFO 29324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-08 08:18:44.898  INFO 29324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-08 08:18:44.899  INFO 29324 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 934 ms
+2020-06-08 08:18:45.008  INFO 29324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-08 08:18:45.272  INFO 29324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-08 08:18:45.300  INFO 29324 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-08 08:18:45.338  INFO 29324 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-06-08 08:18:45.411  INFO 29324 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-08 08:18:45.478  INFO 29324 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-08 08:18:45.584  INFO 29324 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-08 08:18:45.589  INFO 29324 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-08 08:18:45.769  WARN 29324 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-08 08:18:45.936  INFO 29324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-08 08:18:46.000  INFO 29324 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-06-08 08:18:46.181  INFO 29324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-08 08:18:46.182  INFO 29324 --- [main] com.tommy.TommyApplication               : Started TommyApplication in 2.581 seconds (JVM running for 3.698)
+2020-06-08 08:18:48.990  INFO 29324 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-08 08:18:48.992  INFO 29324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-08 08:18:49.001  INFO 29324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-06-08 08:18:49.183 DEBUG 29324 --- [http-nio-8080-exec-5] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-08 08:18:49.183 DEBUG 29324 --- [http-nio-8080-exec-3] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-08 08:18:49.183 DEBUG 29324 --- [http-nio-8080-exec-4] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-08 08:18:49.205 DEBUG 29324 --- [http-nio-8080-exec-5] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-08 08:18:49.205 DEBUG 29324 --- [http-nio-8080-exec-3] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-08 08:18:49.205 DEBUG 29324 --- [http-nio-8080-exec-4] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-08 08:18:49.220 DEBUG 29324 --- [http-nio-8080-exec-3] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-08 08:18:49.222 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:18:49.222 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-08 08:18:49.223 DEBUG 29324 --- [http-nio-8080-exec-4] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-08 08:18:49.224 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.224 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:18:49.225 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-08 08:18:49.227 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.230 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:18:49.230 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-08 08:18:49.232 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.232 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:18:49.232 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-08 08:18:49.234 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.235 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:18:49.235 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-08 08:18:49.237 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.237 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:18:49.238 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-08 08:18:49.239 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.239 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:18:49.240 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-08 08:18:49.243 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.244 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:18:49.245 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-08 08:18:49.248 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.251 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:18:49.251 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-08 08:18:49.253 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.253 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:18:49.254 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-08 08:18:49.255 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.256 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:18:49.256 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-08 08:18:49.258 DEBUG 29324 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:18:49.258 DEBUG 29324 --- [http-nio-8080-exec-5] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-08 08:18:52.955  WARN 29324 --- [http-nio-8080-exec-7] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [490] milliseconds.
+2020-06-08 08:18:52.960 ERROR 29324 --- [http-nio-8080-exec-7] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/uploadimg, Exception : {}
+
+java.io.IOException: org.apache.tomcat.util.http.fileupload.FileUploadException: Cannot write uploaded file to disk!
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:122)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:256)
+	at com.tommy.controller.FileController.uploadImg(FileController.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.tomcat.util.http.fileupload.FileUploadException: Cannot write uploaded file to disk!
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:396)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:120)
+	... 52 common frames omitted
+
+2020-06-08 08:18:52.970  WARN 29324 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-08 08:21:06.799  INFO 12648 --- [main] com.tommy.TommyApplication               : Starting TommyApplication on LAPTOP-J6PA615L with PID 12648 (D:\InterlliJ IDEA WorkSpace\tommy\target\classes started by tommy in D:\InterlliJ IDEA WorkSpace\tommy)
+2020-06-08 08:21:06.801 DEBUG 12648 --- [main] com.tommy.TommyApplication               : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-08 08:21:06.801  INFO 12648 --- [main] com.tommy.TommyApplication               : The following profiles are active: dev
+2020-06-08 08:21:07.240  INFO 12648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-08 08:21:07.256  INFO 12648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-06-08 08:21:07.676  INFO 12648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-08 08:21:07.684  INFO 12648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-08 08:21:07.684  INFO 12648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-08 08:21:07.825  INFO 12648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-08 08:21:07.825  INFO 12648 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 999 ms
+2020-06-08 08:21:07.920  INFO 12648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-08 08:21:08.154  INFO 12648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-08 08:21:08.186  INFO 12648 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-08 08:21:08.233  INFO 12648 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-06-08 08:21:08.306  INFO 12648 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-08 08:21:08.375  INFO 12648 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-08 08:21:08.479  INFO 12648 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-08 08:21:08.484  INFO 12648 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-08 08:21:08.652  WARN 12648 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-08 08:21:08.800  INFO 12648 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-08 08:21:08.868  INFO 12648 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-06-08 08:21:09.048  INFO 12648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-08 08:21:09.050  INFO 12648 --- [main] com.tommy.TommyApplication               : Started TommyApplication in 2.572 seconds (JVM running for 3.669)
+2020-06-08 08:21:23.559  INFO 29872 --- [main] com.tommy.TommyApplication               : Starting TommyApplication on LAPTOP-J6PA615L with PID 29872 (D:\InterlliJ IDEA WorkSpace\tommy\target\classes started by tommy in D:\InterlliJ IDEA WorkSpace\tommy)
+2020-06-08 08:21:23.561 DEBUG 29872 --- [main] com.tommy.TommyApplication               : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-08 08:21:23.562  INFO 29872 --- [main] com.tommy.TommyApplication               : The following profiles are active: dev
+2020-06-08 08:21:23.977  INFO 29872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-08 08:21:23.992  INFO 29872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2020-06-08 08:21:24.378  INFO 29872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-08 08:21:24.384  INFO 29872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-08 08:21:24.384  INFO 29872 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-08 08:21:24.494  INFO 29872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-08 08:21:24.494  INFO 29872 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 894 ms
+2020-06-08 08:21:24.585  INFO 29872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-08 08:21:24.820  INFO 29872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-08 08:21:24.848  INFO 29872 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-08 08:21:24.888  INFO 29872 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-06-08 08:21:24.955  INFO 29872 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-08 08:21:25.020  INFO 29872 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-08 08:21:25.119  INFO 29872 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-08 08:21:25.124  INFO 29872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-08 08:21:25.273  WARN 29872 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-08 08:21:25.416  INFO 29872 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-08 08:21:25.478  INFO 29872 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-06-08 08:21:25.660  INFO 29872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-08 08:21:25.661  INFO 29872 --- [main] com.tommy.TommyApplication               : Started TommyApplication in 2.402 seconds (JVM running for 3.492)
+2020-06-08 08:22:59.519  INFO 29872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-08 08:22:59.520  INFO 29872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-08 08:22:59.531  INFO 29872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-06-08 08:23:00.090  WARN 29872 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [486] milliseconds.
+2020-06-08 08:23:00.095 ERROR 29872 --- [http-nio-8080-exec-1] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/uploadimg, Exception : {}
+
+java.io.IOException: org.apache.tomcat.util.http.fileupload.FileUploadException: Cannot write uploaded file to disk!
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:122)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:256)
+	at com.tommy.controller.FileController.uploadImg(FileController.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.tomcat.util.http.fileupload.FileUploadException: Cannot write uploaded file to disk!
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:396)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:120)
+	... 52 common frames omitted
+
+2020-06-08 08:23:00.110  WARN 29872 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-08 08:24:32.782  INFO 21800 --- [main] com.tommy.TommyApplication               : Starting TommyApplication on LAPTOP-J6PA615L with PID 21800 (D:\InterlliJ IDEA WorkSpace\tommy\target\classes started by tommy in D:\InterlliJ IDEA WorkSpace\tommy)
+2020-06-08 08:24:32.783 DEBUG 21800 --- [main] com.tommy.TommyApplication               : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-08 08:24:32.783  INFO 21800 --- [main] com.tommy.TommyApplication               : The following profiles are active: dev
+2020-06-08 08:24:33.226  INFO 21800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-08 08:24:33.243  INFO 21800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-06-08 08:24:33.639  INFO 21800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-08 08:24:33.645  INFO 21800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-08 08:24:33.645  INFO 21800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-08 08:24:33.747  INFO 21800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-08 08:24:33.747  INFO 21800 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 936 ms
+2020-06-08 08:24:33.838  INFO 21800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-08 08:24:34.065  INFO 21800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-08 08:24:34.092  INFO 21800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-08 08:24:34.130  INFO 21800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-06-08 08:24:34.194  INFO 21800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-08 08:24:34.256  INFO 21800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-08 08:24:34.357  INFO 21800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-08 08:24:34.363  INFO 21800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-08 08:24:34.573  WARN 21800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-08 08:24:34.716  INFO 21800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-08 08:24:34.781  INFO 21800 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-06-08 08:24:34.974  INFO 21800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-08 08:24:34.976  INFO 21800 --- [main] com.tommy.TommyApplication               : Started TommyApplication in 2.501 seconds (JVM running for 3.561)
+2020-06-08 08:24:40.380  INFO 21800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-08 08:24:40.381  INFO 21800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-08 08:24:40.390  INFO 21800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-06-08 08:24:40.939  WARN 21800 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [477] milliseconds.
+2020-06-08 08:24:40.944 ERROR 21800 --- [http-nio-8080-exec-1] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/uploadimg, Exception : {}
+
+java.io.IOException: org.apache.tomcat.util.http.fileupload.FileUploadException: Cannot write uploaded file to disk!
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:122)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:256)
+	at com.tommy.controller.FileController.uploadImg(FileController.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.tomcat.util.http.fileupload.FileUploadException: Cannot write uploaded file to disk!
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:396)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:120)
+	... 52 common frames omitted
+
+2020-06-08 08:24:40.958  WARN 21800 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-08 08:27:01.388 DEBUG 21800 --- [http-nio-8080-exec-4] com.tommy.mapper.PostMapper.insert       : ==>  Preparing: insert into t_post(title,type_tid,user_uid,content,index_img,createDate,updateDate,tag,published) values (?,?,?,?,?,now(),now(),?,?) 
+2020-06-08 08:27:01.405 ERROR 21800 --- [http-nio-8080-exec-4] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/addPost, Exception : {}
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.UnsupportedOperationException
+### The error may involve com.tommy.mapper.PostMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_post(title,type_tid,user_uid,content,index_img,createDate,updateDate,tag,published) values (?,?,?,?,?,now(),now(),?,?)
+### Cause: java.lang.UnsupportedOperationException
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy96.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy106.insert(Unknown Source)
+	at com.tommy.service.impl.PostServiceImpl.insertPost(PostServiceImpl.java:35)
+	at com.tommy.controller.PostController.addPost(PostController.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.UnsupportedOperationException
+### The error may involve com.tommy.mapper.PostMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_post(title,type_tid,user_uid,content,index_img,createDate,updateDate,tag,published) values (?,?,?,?,?,now(),now(),?,?)
+### Cause: java.lang.UnsupportedOperationException
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 57 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at org.apache.ibatis.reflection.wrapper.CollectionWrapper.get(CollectionWrapper.java:38)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:119)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 63 common frames omitted
+
+2020-06-08 08:27:01.407  WARN 21800 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-08 08:32:59.642 DEBUG 21800 --- [http-nio-8080-exec-1] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-08 08:32:59.642 DEBUG 21800 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-08 08:32:59.643 DEBUG 21800 --- [http-nio-8080-exec-3] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-08 08:32:59.643 DEBUG 21800 --- [http-nio-8080-exec-1] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-08 08:32:59.643 DEBUG 21800 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-08 08:32:59.643 DEBUG 21800 --- [http-nio-8080-exec-3] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-08 08:32:59.654 DEBUG 21800 --- [http-nio-8080-exec-1] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-08 08:32:59.658 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:32:59.658 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-08 08:32:59.658 DEBUG 21800 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-08 08:32:59.661 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.662 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:32:59.662 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-08 08:32:59.664 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.665 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:32:59.665 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-08 08:32:59.667 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.667 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:32:59.667 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-08 08:32:59.668 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.671 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:32:59.671 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-08 08:32:59.673 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.675 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:32:59.675 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-08 08:32:59.677 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.678 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:32:59.678 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-08 08:32:59.681 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.682 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:32:59.682 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-08 08:32:59.683 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.685 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:32:59.685 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-08 08:32:59.686 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.687 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:32:59.687 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-08 08:32:59.688 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.690 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:32:59.690 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-08 08:32:59.692 DEBUG 21800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:32:59.692 DEBUG 21800 --- [http-nio-8080-exec-3] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-08 08:33:07.936 DEBUG 21800 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-08 08:33:07.936 DEBUG 21800 --- [http-nio-8080-exec-6] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-08 08:33:07.937 DEBUG 21800 --- [http-nio-8080-exec-6] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-08 08:33:07.937 DEBUG 21800 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-08 08:33:07.938 DEBUG 21800 --- [http-nio-8080-exec-8] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-08 08:33:07.939 DEBUG 21800 --- [http-nio-8080-exec-8] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-08 08:33:07.939 DEBUG 21800 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-08 08:33:07.940 DEBUG 21800 --- [http-nio-8080-exec-6] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-08 08:33:07.947 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:33:07.947 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-08 08:33:07.949 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.949 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:33:07.949 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-08 08:33:07.950 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.951 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:33:07.951 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-08 08:33:07.953 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.954 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:33:07.954 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-08 08:33:07.956 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.956 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:33:07.957 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-08 08:33:07.959 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.959 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-08 08:33:07.959 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-08 08:33:07.960 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.961 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:33:07.961 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-08 08:33:07.962 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.963 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:33:07.963 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-08 08:33:07.965 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.966 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:33:07.966 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-08 08:33:07.971 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.974 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:33:07.974 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-08 08:33:07.976 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.976 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-08 08:33:07.977 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-08 08:33:07.978 DEBUG 21800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-08 08:33:07.979 DEBUG 21800 --- [http-nio-8080-exec-8] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9

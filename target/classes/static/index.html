@@ -1,0 +1,324 @@
+<!doctype html>
+        <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+        <!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+        <!--[if IE 8]>    <html class="lt-ie9" lang="en-US"> <![endif]-->
+        <!--[if gt IE 8]><!-->
+<html lang="en-US" xmlns:th="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+        <head>
+                <!-- META TAGS -->
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <title>驴友在线平台</title>
+
+                <link rel="shortcut icon" href="images/favicon.png" />
+
+                <!-- Style Sheet-->
+                <link rel='stylesheet' id='bootstrap-css-css'  href='css/bootstrap5152.css?ver=1.0' type='text/css' media='all' />
+                <link rel='stylesheet' id='responsive-css-css'  href='css/responsive5152.css?ver=1.0' type='text/css' media='all' />
+                <link rel='stylesheet' id='pretty-photo-css-css'  href='js/prettyphoto/prettyPhotoaeb9.css?ver=3.1.4' type='text/css' media='all' />
+                <link rel='stylesheet' id='main-css-css'  href='css/main5152.css?ver=1.0' type='text/css' media='all' />
+                <link rel='stylesheet' id='custom-css-css'  href='css/custom5152.html?ver=1.0' type='text/css' media='all' />
+                <link rel='stylesheet' id='element-css' href='css/element-ui.css' type="text/css" media="all"/>
+                <link rel='stylesheet' id='style-css' href='css/style.css' type="text/css" media="all"/>
+                <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+                <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>
+                <![endif]-->
+
+        </head>
+
+        <body>
+                <div id="app">
+                <!-- Start of Header -->
+                <div class="header-wrapper">
+                        <header>
+                                <div class="container">
+
+
+                                        <div class="logo-container">
+                                                <!-- Website Logo -->
+                                                <!-- <a href="index-2.html"  title="Knowledge Base Theme">
+                                                        <img src="images/logo.png" alt="Knowledge Base Theme">
+                                                </a> -->
+                                                <a href="index.html">
+                                                        <span id="title" class="tag-line">驴友在线平台</span>
+                                                </a>
+                                        </div>
+
+
+                                        <!-- Start of Main Navigation -->
+                                        <nav class="main-nav">
+                                                <div class="menu-top-menu-container">
+                                                        <ul id="menu-top-menu" class="clearfix">
+                                                                <li class="current-menu-item"><a href="#">主页</a></li>
+                                                                <!-- <li><a href="home-categories-description.html">论坛</a></li> -->
+                                                                <li><a href="home-categories-articles.html">聊天室</a></li>
+                                                                <li><a href="articles-list.html">出行计划</a></li>
+                                                                <li><a href="faq.html">常见问题</a></li>
+                                                                <!-- <li><a href="#">风格</a>
+                                                                        <ul class="sub-menu">
+                                                                                <li><a href="blue-skin.html">Blue Skin</a></li>
+                                                                                <li><a href="green-skin.html">Green Skin</a></li>
+                                                                                <li><a href="red-skin.html">Red Skin</a></li>
+                                                                                <li><a href="index-2.html">Default Skin</a></li>
+                                                                        </ul>
+                                                                </li> -->
+                                                                <!-- <li><a href="#">更多</a>
+                                                                        <ul class="sub-menu">
+                                                                                <li><a href="full-width.html">Full Width</a></li>
+                                                                                <li><a href="elements.html">Elements</a></li>
+                                                                                <li><a href="page.html">Sample Page</a></li>
+                                                                        </ul>
+                                                                </li> -->
+
+                                                                <li><a href="contact.html">联系我们</a></li>
+                                                                <li id="log"><el-button type="text" @click="dialogFormVisible = true">{{log}}</el-button></li>
+                                                                <span id="split" class="split">|</span>
+                                                                <li id="reg"><el-button  type="text" @click="dialogTableVisible = true">{{reg}}</el-button></li>
+                                                                
+                                                                <el-dialog custom-class="custom" width="25%" title="密码登录" :visible.sync="dialogFormVisible" center>
+                                                                        <input type="text" id="button1" placeholder="您的用户名" ref="username"/>
+                                                                        <input type="password" placeholder="您的密码" ref="password"/>
+                                                                        <!-- <div id="forgetmm"><a>忘记密码</a></div> -->
+                                                                        <div slot="footer" class="dialog-footer">
+                                                        
+                                                                          <el-button type="primary" @click="login">登录</el-button>
+
+                                                                        </div>
+                                                                </el-dialog>
+
+                                                                <el-dialog custom-class="custom2" width="25%" title="新用户注册" :visible.sync="dialogTableVisible" center>
+                                                                        <el-input type="tel" placeholder="手机号" maxlength="11" v-model="user.tel" ref="tel"></el-input>
+                                                                        <el-input type="email" placeholder="邮箱" v-model="user.email" ref="email"></el-input>
+                                                                        <el-input type="text" placeholder="用户名" v-model="user.username" ref="username"></el-input>
+                                                                        <el-input type="password" show-password placeholder="密码" maxlength="16" v-model="user.password" ref="password"></el-input>
+                                                
+                                                                        <div slot="footer" class="dialog-footer">
+                                                                          <el-button type="primary" @click="checkUserName">注册</el-button>
+                                                                        </div>
+                                                                </el-dialog>
+                                     
+                                                        </ul>
+                                                </div>
+                                        </nav>
+                                        <!-- End of Main Navigation -->
+
+                                </div>
+                        </header>
+                </div>
+                <!-- End of Header -->
+
+                <!-- Start of Search Wrapper -->
+                <div class="search-area-wrapper">
+                        <div id="search" class="search-area container">
+                                <h3 class="search-header">如何制定自己的旅行计划?</h3>
+                                <p class="search-tag-line">可以在下面询问或输入您要查找的旅行日志!</p>
+
+                                <div id="search-form" class="search" >
+                                        <el-autocomplete
+                                        type="search"
+                                        class="inline-input"
+                                        v-model="state2"
+                                        :fetch-suggestions="querySearch"
+                                        placeholder="在此处输入搜索字词"
+                                        :trigger-on-focus="false"
+                                        @select="handleSelect"
+                                        ></el-autocomplete>
+                                        <!-- <input class="search-term" type="text" v-model="question" placeholder="在此处输入搜索字词" title="* 请输入一个搜索词!" /> -->
+                                        <!-- <input class="search-btn" type="submit" value="查询" /> -->
+                                        <div id="search-error-container"></div>
+                                </div>
+                        </div>
+                </div>
+                <!-- End of Search Wrapper -->
+                <!-- <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" title="模板之家">模板之家</a></div> -->
+
+                <!-- Start of Page Container -->
+                <div class="page-container">
+                        <div class="container">
+                                <div class="row">
+
+                                        <!-- start of page content -->
+                                        <div class="span8 page-content">
+
+                                                <!-- Basic Home Page Template -->
+                                                <div class="row separator">
+                                                        <section class="span4 articles-list">
+                                                                <h3>精选攻略</h3>
+                                                                <ul class="articles">
+                                                                        <li v-for="(item,i) in JingPost.slice((this.JcurrentPage-1)*this.JpageSize,this.JcurrentPage*this.JpageSize)" class="article-entry standard">
+                                                                                <a href="single.html" @click="say(item.id)"><img v-bind:src="item.indexImg" height="40px"></a>
+                                                                                <h4><a href="single.html" @click="say(item.id)">{{item.title}}</a></h4>
+                                                                                <span class="article-meta">{{item.createDate}}<a href="#" title="View all post in Server &amp; Database">&nbsp;&nbsp;{{item.type[0].tname}} &nbsp;&nbsp;{{item.user[0].uname}}</a></span>
+                                                                                <span class="like-count">{{item.zanN}}</span>
+                                                                        </li>
+                                                                </ul>
+                                                                <el-pagination
+                                                                background
+                                                                layout="prev, pager, next"
+                                                                :total="Jtotal"
+                                                                @current-change="handleJCurrentChange"
+                                                                :current-page="JcurrentPage"
+                                                                :page-size="JpageSize">
+                                                                </el-pagination>
+                                                        </section>
+
+
+                                                        <section class="span4 articles-list">
+                                                                <h3>最新的文章分享</h3>
+                                                                <ul class="articles" >
+                                                                        <li v-for="(item,i) in post.slice((this.currentPage-1)*this.pageSize,this.currentPage*this.pageSize)" class="article-entry standard">
+                                                                                <a href="single.html" @click="say(item.id)"><img v-bind:src="item.indexImg" height="40px"></a>
+                                                                                <h4><a href="single.html" @click="say(item.id)">{{item.title}}</a></h4>
+                                                                                <span class="article-meta">{{item.createDate}} <a href="#" title="View all post in Server &amp; Database">&nbsp;&nbsp;{{item.type[0].tname}} &nbsp;&nbsp;{{item.user[0].uname}}</a></span>
+                                                                                <span class="like-count">{{item.zanN}}</span>
+                                                                        </li>
+                                                                </ul>
+                                                                <el-pagination
+                                                                background
+                                                                layout="prev, pager, next"
+                                                                :total="total"
+                                                                @current-change="handleCurrentChange"
+                                                                :current-page="currentPage"
+                                                                :page-size="pageSize">
+                                                                </el-pagination>
+                                                        </section>
+                                                </div>
+                                        </div>
+                                        <!-- end of page content -->
+
+
+                                        <!-- start of sidebar -->
+                                        <aside class="span4 page-sidebar">
+
+                                                <section class="widget">
+                                                        <div class="support-widget">
+                                                                <h3 class="title">支持</h3>
+                                                                <p class="intro">需要更多支持吗？如果您找不到答案，请与我们联系以获取更多帮助。</p>
+                                                        </div>
+                                                </section>
+
+                                                <section class="widget">
+                                                        <div class="quick-links-widget">
+                                                                <h3 class="title">快速链接</h3>
+                                                                <ul id="menu-quick-links" class="menu clearfix">
+                                                                        <li><a href="index-2.html">首页</a></li>
+                                                                        <li><a href="articles-list.html">文章列表</a></li>
+                                                                        <li><a href="faq.html">常见问题</a></li>
+                                                                        <li><a href="contact.html">联系我们</a></li>
+                                                                </ul>
+                                                        </div>
+                                                </section>
+
+                                                <section class="widget">
+                                                        <h3 class="title">标签</h3>
+                                                        <div class="tagcloud">
+
+                                                                <el-tag v-for="(item,i) in list">{{item.tname}}</el-tag>
+                                                               
+                                                        </div>
+                                                </section>
+
+                                        </aside>
+                                        <!-- end of sidebar -->
+                                </div>
+                        </div>
+                </div>
+                <!-- End of Page Container -->
+
+                <!-- Start of Footer -->
+                <footer id="footer-wrapper">
+                        <div id="footer" class="container">
+                                <div class="row">
+
+                                        <div class="span3">
+                                                <section class="widget">
+                                                        <h3 class="title">How it works</h3>
+                                                        <div class="textwidget">
+                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                                                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+                                                        </div>
+                                                </section>
+                                        </div>
+
+                                        <div class="span3">
+                                                <section class="widget"><h3 class="title">Categories</h3>
+                                                        <ul>
+                                                                <li><a href="#" title="Lorem ipsum dolor sit amet,">Advanced Techniques</a> </li>
+                                                                <li><a href="#" title="Lorem ipsum dolor sit amet,">Designing in WordPress</a></li>
+                                                                <li><a href="#" title="Lorem ipsum dolor sit amet,">Server &amp; Database</a></li>
+                                                                <li><a href="#" title="Lorem ipsum dolor sit amet, ">Theme Development</a></li>
+                                                                <li><a href="#" title="Lorem ipsum dolor sit amet,">Website Dev</a></li>
+                                                                <li><a href="#" title="Lorem ipsum dolor sit amet,">WordPress for Beginners</a></li>
+                                                                <li><a href="#" title="Lorem ipsum dolor sit amet, ">WordPress Plugins</a></li>
+                                                        </ul>
+                                                </section>
+                                        </div>
+
+                                        <div class="span3">
+                                                <section class="widget">
+                                                        <h3 class="title">Latest Tweets</h3>
+                                                        <div id="twitter_update_list">
+                                                                <ul>
+                                                                        <li>No Tweets loaded !</li>
+                                                                </ul>
+                                                        </div>
+                                                       
+                                                </section>
+                                        </div>
+
+                                        <div class="span3">
+                                                <section class="widget">
+                                                        <h3 class="title">Flickr Photos</h3>
+                                                        <div class="flickr-photos" id="basicuse">
+                                                        </div>
+                                                </section>
+                                        </div>
+
+                                </div>
+                        </div>
+                        <!-- end of #footer -->
+
+                        <!-- Footer Bottom -->
+                        <div id="footer-bottom-wrapper">
+                                <div id="footer-bottom" class="container">
+                                        <div class="row">
+                                                <div class="span6">
+                                                        <p class="copyright">
+                                                                Copyright © 2013. All Rights Reserved by KnowledgeBase.Collect from <a href="http://www.cssmoban.com/" title="" target="_blank"></a>
+                                                        </p>
+                                                </div>
+                                                <div class="span6">
+                                                        <!-- Social Navigation -->
+                                                        <ul class="social-nav clearfix">
+                                                                <li class="linkedin"><a target="_blank" href="#"></a></li>
+                                                                <li class="stumble"><a target="_blank" href="#"></a></li>
+                                                                <li class="google"><a target="_blank" href="#"></a></li>
+                                                                <li class="deviantart"><a target="_blank" href="#"></a></li>
+                                                                <li class="flickr"><a target="_blank" href="#"></a></li>
+                                                                <li class="skype"><a target="_blank" href="skype:#?call"></a></li>
+                                                                <li class="rss"><a target="_blank" href="#"></a></li>
+                                                                <li class="twitter"><a target="_blank" href="#"></a></li>
+                                                                <li class="facebook"><a target="_blank" href="#"></a></li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- End of Footer Bottom -->
+
+                </footer>
+                <!-- End of Footer -->
+
+                <a href="#top" id="scroll-top"></a>
+
+                </div>
+        </body>
+        <!-- script -->
+        <script type='text/javascript' src='js/jquery-1.8.3.min.js'></script>
+        <script type='text/javascript' src='js/vue/vue.js'></script>
+        <script type="text/javascript" src="js/axios.min.js"></script>
+        <script type='text/javascript' src='js/element-ui.js'></script>
+        <script type='text/javascript' src='js/vue/loginAndRegister.js'></script>
+</html>

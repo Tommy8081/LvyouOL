@@ -1,0 +1,1078 @@
+2020-05-15 18:38:55.974  INFO 24800 --- [main] com.tommy.TommyApplication               : Starting TommyApplication on LAPTOP-J6PA615L with PID 24800 (D:\InterlliJ IDEA WorkSpace\tommy\target\classes started by tommy in D:\InterlliJ IDEA WorkSpace\tommy)
+2020-05-15 18:38:56.000 DEBUG 24800 --- [main] com.tommy.TommyApplication               : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-15 18:38:56.000  INFO 24800 --- [main] com.tommy.TommyApplication               : The following profiles are active: dev
+2020-05-15 18:38:56.560  INFO 24800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-15 18:38:56.577  INFO 24800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-05-15 18:38:57.072  INFO 24800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-15 18:38:57.079  INFO 24800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-15 18:38:57.079  INFO 24800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-15 18:38:57.217  INFO 24800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-15 18:38:57.217  INFO 24800 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1171 ms
+2020-05-15 18:38:57.324  INFO 24800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-15 18:38:57.588  INFO 24800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-15 18:38:57.621  INFO 24800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-15 18:38:57.674  INFO 24800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-15 18:38:57.780  INFO 24800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-15 18:38:57.882  INFO 24800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-15 18:38:57.999  INFO 24800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-15 18:38:58.005  INFO 24800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 18:38:58.179  WARN 24800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-15 18:38:58.343  INFO 24800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-15 18:38:58.413  INFO 24800 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-05-15 18:38:58.593  INFO 24800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-15 18:38:58.594  INFO 24800 --- [main] com.tommy.TommyApplication               : Started TommyApplication in 3.212 seconds (JVM running for 5.444)
+2020-05-15 18:39:02.428  INFO 24800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-15 18:39:02.430  INFO 24800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-15 18:39:02.442  INFO 24800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-05-15 18:39:02.928 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.mapper.PostMapper.selectJingPost     : ==>  Preparing: SELECT * FROM t_post where tag = 1 order by id desc 
+2020-05-15 18:39:02.928 DEBUG 24800 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-05-15 18:39:02.928 DEBUG 24800 --- [http-nio-8080-exec-10] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-05-15 18:39:02.943 DEBUG 24800 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-05-15 18:39:02.943 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.mapper.PostMapper.selectJingPost     : ==> Parameters: 
+2020-05-15 18:39:02.943 DEBUG 24800 --- [http-nio-8080-exec-10] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-05-15 18:39:02.974 DEBUG 24800 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-05-15 18:39:02.976 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:02.976 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:02.976 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:39:02.976 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:39:02.977 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.978 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:02.978 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.978 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:39:02.979 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:02.979 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:39:02.987 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.988 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.989 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:02.989 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:39:02.989 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:02.989 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:39:02.990 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.990 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.991 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:02.991 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:02.991 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-05-15 18:39:02.991 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:39:02.993 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.993 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.995 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:02.995 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:02.995 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:39:02.995 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-05-15 18:39:02.997 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.997 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.998 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:02.998 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:39:02.998 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:02.998 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:39:02.999 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:02.999 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:03.000 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:03.000 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:39:03.000 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:03.000 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:39:03.003 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:03.003 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:03.004 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.mapper.PostMapper.selectJingPost     : <==      Total: 4
+2020-05-15 18:39:03.004 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:03.004 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:39:03.006 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:03.007 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:03.007 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:39:03.009 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:03.009 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:03.010 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:39:03.011 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:03.012 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:03.012 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-05-15 18:39:03.013 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:03.014 DEBUG 24800 --- [http-nio-8080-exec-10] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-05-15 18:39:52.111 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.mapper.PostMapper.selectJingPost     : ==>  Preparing: SELECT * FROM t_post where tag = 1 order by id desc 
+2020-05-15 18:39:52.112 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.mapper.PostMapper.selectJingPost     : ==> Parameters: 
+2020-05-15 18:39:52.112 DEBUG 24800 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-05-15 18:39:52.113 DEBUG 24800 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-05-15 18:39:52.117 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.117 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:39:52.118 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.119 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.119 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:39:52.121 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.121 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.121 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:39:52.123 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.123 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.123 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:39:52.124 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.124 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:39:52.125 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.126 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.126 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.126 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.126 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:39:52.126 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:39:52.128 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.129 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.129 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:39:52.129 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.131 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.132 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:39:52.132 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.133 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.133 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.134 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:39:52.134 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.134 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-05-15 18:39:52.136 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.136 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.137 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.mapper.PostMapper.selectJingPost     : <==      Total: 4
+2020-05-15 18:39:52.137 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.138 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-05-15 18:39:52.139 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.141 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.142 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:39:52.144 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.145 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.145 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:39:52.147 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.149 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.PostMapper.selectByPrimaryKey      : ==>  Preparing: SELECT * FROM t_post where id=? 
+2020-05-15 18:39:52.149 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.151 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.mapper.CommentMapper.selectByPidPC   : ==>  Preparing: SELECT * FROM t_comment where post_id=? and parent_comment_cid is null order by createDate desc 
+2020-05-15 18:39:52.151 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:39:52.151 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.PostMapper.selectByPrimaryKey      : ==> Parameters: 78(Integer)
+2020-05-15 18:39:52.151 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.mapper.CommentMapper.selectByPidPC   : ==> Parameters: 78(Integer)
+2020-05-15 18:39:52.152 DEBUG 24800 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectByName   : ==>  Preparing: SELECT * FROM t_user where uname=? 
+2020-05-15 18:39:52.153 DEBUG 24800 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectByName   : ==> Parameters: (String)
+2020-05-15 18:39:52.155 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.155 ERROR 24800 --- [http-nio-8080-exec-3] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/getPostByuserId, Exception : {}
+
+java.lang.NullPointerException: null
+	at com.tommy.controller.PostController.getPostByuserId(PostController.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-05-15 18:39:52.155 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.155 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.156 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:39:52.156 ERROR 24800 --- [http-nio-8080-exec-1] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/getPlanByUid, Exception : {}
+
+java.lang.NullPointerException: null
+	at com.tommy.controller.PlanController.getPlanByUid(PlanController.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-05-15 18:39:52.156 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:39:52.158 DEBUG 24800 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectByName   : <==      Total: 0
+2020-05-15 18:39:52.159  INFO 24800 --- [http-nio-8080-exec-10] c.t.c.WebSocketServerController          : Connection error
+2020-05-15 18:39:52.159 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.160 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.161 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:39:52.161 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.159 ERROR 24800 --- [http-nio-8080-exec-8] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/getJingPost, Exception : {}
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:351)
+	at org.apache.catalina.connector.OutputBuffer.flushByteBuffer(OutputBuffer.java:776)
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:681)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:386)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:364)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:135)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:229)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:123)
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:122)
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44)
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:50)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:466)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1253)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:740)
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:560)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:504)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:538)
+	at org.apache.coyote.http11.filters.IdentityOutputFilter.doWrite(IdentityOutputFilter.java:73)
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:190)
+	at org.apache.coyote.Response.doWrite(Response.java:601)
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:339)
+	... 63 common frames omitted
+
+2020-05-15 18:39:52.163 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.163 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:39:52.163 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.165 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.PostMapper.selectByPrimaryKey      : <==      Total: 1
+2020-05-15 18:39:52.165 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.165 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.166 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-05-15 18:39:52.166  WARN 24800 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-05-15 18:39:52.166  WARN 24800 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-05-15 18:39:52.166 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.166  INFO 24800 --- [http-nio-8080-exec-10] c.t.c.WebSocketServerController          : Connection error
+2020-05-15 18:39:52.166 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:39:52.168 DEBUG 24800 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.168 ERROR 24800 --- [http-nio-8080-exec-10] o.a.t.websocket.pojo.PojoEndpointBase    : Failed to call onClose method of POJO end point for POJO of type [com.tommy.controller.WebSocketServerController]
+
+javax.websocket.DecodeException: Failed to decode path parameter value [undefined] to expected type [class java.lang.Integer]
+	at org.apache.tomcat.websocket.pojo.PojoMethodMapping.buildArgs(PojoMethodMapping.java:354)
+	at org.apache.tomcat.websocket.pojo.PojoMethodMapping.getOnCloseArgs(PojoMethodMapping.java:249)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.onClose(PojoEndpointBase.java:104)
+	at org.apache.tomcat.websocket.WsSession.fireEndpointOnClose(WsSession.java:555)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:501)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:459)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:446)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:440)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.handleOnOpenOrCloseError(PojoEndpointBase.java:92)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:79)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:64)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:133)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:914)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NumberFormatException: For input string: "undefined"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.valueOf(Integer.java:983)
+	at org.apache.tomcat.websocket.Util.coerceToType(Util.java:321)
+	at org.apache.tomcat.websocket.pojo.PojoMethodMapping.buildArgs(PojoMethodMapping.java:352)
+	... 18 common frames omitted
+
+2020-05-15 18:39:52.168 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.168  INFO 24800 --- [http-nio-8080-exec-10] c.t.c.WebSocketServerController          : Connection error
+2020-05-15 18:39:52.168 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.mapper.CommentMapper.selectByPidPC   : <==      Total: 1
+2020-05-15 18:39:52.169 DEBUG 24800 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-05-15 18:39:52.169  INFO 24800 --- [http-nio-8080-exec-10] c.t.c.WebSocketServerController          : Connection error
+2020-05-15 18:39:52.173 ERROR 24800 --- [http-nio-8080-exec-4] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/getPostById, Exception : {}
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:309)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:272)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:318)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:254)
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:124)
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:122)
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44)
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:50)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:466)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1253)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:740)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:693)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:683)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:564)
+	at org.apache.coyote.http11.filters.IdentityOutputFilter.flush(IdentityOutputFilter.java:117)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:217)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1155)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:398)
+	at org.apache.coyote.Response.action(Response.java:209)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305)
+	... 56 common frames omitted
+
+2020-05-15 18:39:52.175  WARN 24800 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-05-15 18:39:52.177 ERROR 24800 --- [http-nio-8080-exec-7] c.t.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/getPost, Exception : {}
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:351)
+	at org.apache.catalina.connector.OutputBuffer.flushByteBuffer(OutputBuffer.java:776)
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:681)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:386)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:364)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:135)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:229)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:123)
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:122)
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44)
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:50)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:466)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1253)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:740)
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:560)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:504)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:538)
+	at org.apache.coyote.http11.filters.IdentityOutputFilter.doWrite(IdentityOutputFilter.java:73)
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:190)
+	at org.apache.coyote.Response.doWrite(Response.java:601)
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:339)
+	... 63 common frames omitted
+
+2020-05-15 18:39:52.252 DEBUG 24800 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-05-15 18:39:52.253 DEBUG 24800 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-05-15 18:39:52.254 DEBUG 24800 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-05-15 18:39:52.254 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.mapper.PostMapper.selectJingPost     : ==>  Preparing: SELECT * FROM t_post where tag = 1 order by id desc 
+2020-05-15 18:39:52.254 DEBUG 24800 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-05-15 18:39:52.254 DEBUG 24800 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-05-15 18:39:52.254 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.mapper.PostMapper.selectJingPost     : ==> Parameters: 
+2020-05-15 18:39:52.262 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.262 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:39:52.264 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.264 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:39:52.266 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.266 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.266 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.266 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:39:52.266 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.266 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:39:52.268 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.268 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.268 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.268 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.268 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:39:52.269 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:39:52.270 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.270 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.270 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.270 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.270 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-05-15 18:39:52.270 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:39:52.271 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.271 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.271 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.271 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.271 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-05-15 18:39:52.272 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:39:52.273 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.273 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.274 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.274 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:39:52.274 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:39:52.274 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:39:52.275 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.275 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.276 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.276 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:39:52.276 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.276 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:39:52.277 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.277 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.277 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.mapper.PostMapper.selectJingPost     : <==      Total: 4
+2020-05-15 18:39:52.278 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.278 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:39:52.279 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.280 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.280 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:39:52.281 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.281 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.281 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:39:52.282 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.283 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:39:52.283 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-05-15 18:39:52.285 DEBUG 24800 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:39:52.285 DEBUG 24800 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-05-15 18:40:00.677 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.U.selectByUsernameAndPassword      : ==>  Preparing: SELECT * FROM t_user where uname=? and password=? 
+2020-05-15 18:40:00.678 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.U.selectByUsernameAndPassword      : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2020-05-15 18:40:00.679 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.U.selectByUsernameAndPassword      : <==      Total: 1
+2020-05-15 18:40:00.816 DEBUG 24800 --- [http-nio-8080-exec-3] c.tommy.mapper.UserMapper.selectByName   : ==>  Preparing: SELECT * FROM t_user where uname=? 
+2020-05-15 18:40:00.817 DEBUG 24800 --- [http-nio-8080-exec-3] c.tommy.mapper.UserMapper.selectByName   : ==> Parameters: admin(String)
+2020-05-15 18:40:00.817 DEBUG 24800 --- [http-nio-8080-exec-1] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-05-15 18:40:00.818 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.mapper.PostMapper.selectJingPost     : ==>  Preparing: SELECT * FROM t_post where tag = 1 order by id desc 
+2020-05-15 18:40:00.818 DEBUG 24800 --- [http-nio-8080-exec-1] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-05-15 18:40:00.818 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.mapper.PostMapper.selectJingPost     : ==> Parameters: 
+2020-05-15 18:40:00.818 DEBUG 24800 --- [http-nio-8080-exec-3] c.tommy.mapper.UserMapper.selectByName   : <==      Total: 1
+2020-05-15 18:40:00.818 DEBUG 24800 --- [http-nio-8080-exec-10] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-05-15 18:40:00.818 DEBUG 24800 --- [http-nio-8080-exec-10] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-05-15 18:40:00.819 DEBUG 24800 --- [http-nio-8080-exec-1] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-05-15 18:40:00.823 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:00.824 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:40:00.825 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.826 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.826 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:40:00.827 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.827 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:00.828 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:40:00.828 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:00.828 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:40:00.829 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.829 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.829 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.829 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.829 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:40:00.830 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:40:00.831 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.831 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.831 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:00.831 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:00.831 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:40:00.831 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:40:00.832 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.832 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.833 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.833 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.833 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-05-15 18:40:00.833 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:40:00.834 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.834 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.835 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.835 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.835 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:40:00.835 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-05-15 18:40:00.836 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.836 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.836 DEBUG 24800 --- [http-nio-8080-exec-8] c.t.mapper.PostMapper.selectJingPost     : <==      Total: 4
+2020-05-15 18:40:00.837 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:00.837 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:40:00.839 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.840 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.840 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:40:00.842 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.842 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.843 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:40:00.844 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.844 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.845 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:40:00.846 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.846 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.847 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:40:00.848 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.848 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:00.848 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-05-15 18:40:00.850 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:00.850 DEBUG 24800 --- [http-nio-8080-exec-10] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-05-15 18:40:05.208  INFO 24800 --- [http-nio-8080-exec-3] c.t.c.WebSocketServerController          : Connection error
+2020-05-15 18:40:05.208 ERROR 24800 --- [http-nio-8080-exec-3] o.a.t.websocket.pojo.PojoEndpointBase    : Failed to call onClose method of POJO end point for POJO of type [com.tommy.controller.WebSocketServerController]
+
+javax.websocket.DecodeException: Failed to decode path parameter value [undefined] to expected type [class java.lang.Integer]
+	at org.apache.tomcat.websocket.pojo.PojoMethodMapping.buildArgs(PojoMethodMapping.java:354)
+	at org.apache.tomcat.websocket.pojo.PojoMethodMapping.getOnCloseArgs(PojoMethodMapping.java:249)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.onClose(PojoEndpointBase.java:104)
+	at org.apache.tomcat.websocket.WsSession.fireEndpointOnClose(WsSession.java:555)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:501)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:459)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:446)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:440)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.handleOnOpenOrCloseError(PojoEndpointBase.java:92)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:79)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:64)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:133)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:914)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NumberFormatException: For input string: "undefined"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.valueOf(Integer.java:983)
+	at org.apache.tomcat.websocket.Util.coerceToType(Util.java:321)
+	at org.apache.tomcat.websocket.pojo.PojoMethodMapping.buildArgs(PojoMethodMapping.java:352)
+	... 18 common frames omitted
+
+2020-05-15 18:40:05.209  INFO 24800 --- [http-nio-8080-exec-3] c.t.c.WebSocketServerController          : Connection error
+2020-05-15 18:40:05.211 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.mapper.PostMapper.selectByuserId     : ==>  Preparing: SELECT * FROM t_post where user_uid=? order by id desc 
+2020-05-15 18:40:05.211 DEBUG 24800 --- [http-nio-8080-exec-8] c.tommy.mapper.UserMapper.selectByName   : ==>  Preparing: SELECT * FROM t_user where uname=? 
+2020-05-15 18:40:05.212 DEBUG 24800 --- [http-nio-8080-exec-8] c.tommy.mapper.UserMapper.selectByName   : ==> Parameters: admin(String)
+2020-05-15 18:40:05.212 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.mapper.PostMapper.selectByuserId     : ==> Parameters: 19(Integer)
+2020-05-15 18:40:05.212 DEBUG 24800 --- [http-nio-8080-exec-7] com.tommy.mapper.PlanMapper.selectByUid  : ==>  Preparing: SELECT * FROM t_plan where user_uid=? order by startDate 
+2020-05-15 18:40:05.212 DEBUG 24800 --- [http-nio-8080-exec-7] com.tommy.mapper.PlanMapper.selectByUid  : ==> Parameters: 19(Integer)
+2020-05-15 18:40:05.213 DEBUG 24800 --- [http-nio-8080-exec-8] c.tommy.mapper.UserMapper.selectByName   : <==      Total: 1
+2020-05-15 18:40:05.215 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:05.215 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:40:05.215 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.mapper.PostMapper.selectJingPost     : ==>  Preparing: SELECT * FROM t_post where tag = 1 order by id desc 
+2020-05-15 18:40:05.215 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.mapper.PostMapper.selectJingPost     : ==> Parameters: 
+2020-05-15 18:40:05.218 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.PostMapper.selectByPrimaryKey      : ==>  Preparing: SELECT * FROM t_post where id=? 
+2020-05-15 18:40:05.218 DEBUG 24800 --- [http-nio-8080-exec-5] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-05-15 18:40:05.218 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.218 DEBUG 24800 --- [http-nio-8080-exec-5] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-05-15 18:40:05.218 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.PostMapper.selectByPrimaryKey      : ==> Parameters: 78(Integer)
+2020-05-15 18:40:05.218 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.219 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:40:05.221 DEBUG 24800 --- [http-nio-8080-exec-7] com.tommy.mapper.PlanMapper.selectByUid  : <==      Total: 0
+2020-05-15 18:40:05.221 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.221 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:05.221 DEBUG 24800 --- [http-nio-8080-exec-10] c.t.mapper.PostMapper.selectByuserId     : <==      Total: 1
+2020-05-15 18:40:05.221 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.mapper.CommentMapper.selectByPidPC   : ==>  Preparing: SELECT * FROM t_comment where post_id=? and parent_comment_cid is null order by createDate desc 
+2020-05-15 18:40:05.221 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:40:05.222 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.mapper.CommentMapper.selectByPidPC   : ==> Parameters: 78(Integer)
+2020-05-15 18:40:05.222 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:05.222 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:40:05.223 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.223 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.223 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.223 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.223 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.224 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:40:05.224 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:40:05.224 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:40:05.225 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.225 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.225 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.225 DEBUG 24800 --- [http-nio-8080-exec-2] c.t.mapper.CommentMapper.selectByPidPC   : <==      Total: 1
+2020-05-15 18:40:05.225 DEBUG 24800 --- [http-nio-8080-exec-9] c.t.m.PostMapper.selectByPrimaryKey      : <==      Total: 1
+2020-05-15 18:40:05.226 DEBUG 24800 --- [http-nio-8080-exec-6] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-05-15 18:40:05.226 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:05.226 DEBUG 24800 --- [http-nio-8080-exec-6] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-05-15 18:40:05.226 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:40:05.227 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.227 DEBUG 24800 --- [http-nio-8080-exec-6] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-05-15 18:40:05.227 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.228 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:40:05.229 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:05.229 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:40:05.229 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.229 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:05.230 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:40:05.230 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.230 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.231 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:40:05.231 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.231 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.231 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:40:05.232 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.232 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.233 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:05.233 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.233 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:40:05.233 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:40:05.234 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.234 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.234 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.234 DEBUG 24800 --- [http-nio-8080-exec-4] c.t.mapper.PostMapper.selectJingPost     : <==      Total: 4
+2020-05-15 18:40:05.235 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-05-15 18:40:05.236 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.236 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.237 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-05-15 18:40:05.238 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.238 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:05.238 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:40:05.240 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.240 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.240 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:40:05.241 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.242 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.242 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:40:05.243 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.244 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.244 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:40:05.246 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.246 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.247 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:40:05.248 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.249 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:05.249 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-05-15 18:40:05.252 DEBUG 24800 --- [http-nio-8080-exec-5] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:05.253 DEBUG 24800 --- [http-nio-8080-exec-5] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-05-15 18:40:19.792 DEBUG 24800 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-05-15 18:40:19.792 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.mapper.PostMapper.selectJingPost     : ==>  Preparing: SELECT * FROM t_post where tag = 1 order by id desc 
+2020-05-15 18:40:19.792 DEBUG 24800 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-05-15 18:40:19.792 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.mapper.PostMapper.selectJingPost     : ==> Parameters: 
+2020-05-15 18:40:19.792 DEBUG 24800 --- [http-nio-8080-exec-3] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-05-15 18:40:19.793 DEBUG 24800 --- [http-nio-8080-exec-3] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-05-15 18:40:19.794 DEBUG 24800 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-05-15 18:40:19.796 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:19.797 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:40:19.798 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.799 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.799 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:40:19.800 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:19.800 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.800 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:40:19.801 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:19.801 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:40:19.802 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.802 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.802 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.802 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.802 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:40:19.802 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:40:19.803 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.803 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.804 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:19.804 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:19.804 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:40:19.804 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:40:19.805 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.805 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.805 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.805 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.805 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-05-15 18:40:19.805 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:40:19.807 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.807 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.807 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.807 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.807 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:40:19.807 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-05-15 18:40:19.809 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.809 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.809 DEBUG 24800 --- [http-nio-8080-exec-1] c.t.mapper.PostMapper.selectJingPost     : <==      Total: 4
+2020-05-15 18:40:19.809 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:40:19.809 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:40:19.810 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.811 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.811 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:40:19.813 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.813 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.813 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:40:19.815 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.815 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.815 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:40:19.817 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.818 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.818 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:40:19.819 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.820 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:40:19.820 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-05-15 18:40:19.821 DEBUG 24800 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:40:19.822 DEBUG 24800 --- [http-nio-8080-exec-3] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-05-15 18:41:12.265  INFO 22596 --- [main] com.tommy.TommyApplication               : Starting TommyApplication on LAPTOP-J6PA615L with PID 22596 (D:\InterlliJ IDEA WorkSpace\tommy\target\classes started by tommy in D:\InterlliJ IDEA WorkSpace\tommy)
+2020-05-15 18:41:12.267 DEBUG 22596 --- [main] com.tommy.TommyApplication               : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-15 18:41:12.268  INFO 22596 --- [main] com.tommy.TommyApplication               : The following profiles are active: dev
+2020-05-15 18:41:12.901  INFO 22596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-15 18:41:12.918  INFO 22596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-05-15 18:41:13.370  INFO 22596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-15 18:41:13.379  INFO 22596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-15 18:41:13.379  INFO 22596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-15 18:41:13.511  INFO 22596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-15 18:41:13.512  INFO 22596 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1199 ms
+2020-05-15 18:41:13.623  INFO 22596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-15 18:41:13.905  INFO 22596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-15 18:41:13.935  INFO 22596 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-15 18:41:13.972  INFO 22596 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-15 18:41:14.037  INFO 22596 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-15 18:41:14.111  INFO 22596 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-15 18:41:14.225  INFO 22596 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-15 18:41:14.229  INFO 22596 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 18:41:14.403  WARN 22596 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-15 18:41:14.582  INFO 22596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-15 18:41:14.656  INFO 22596 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-05-15 18:41:14.837  INFO 22596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-15 18:41:14.838  INFO 22596 --- [main] com.tommy.TommyApplication               : Started TommyApplication in 3.061 seconds (JVM running for 4.553)
+2020-05-15 18:41:16.734  INFO 22596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-15 18:41:16.735  INFO 22596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-15 18:41:16.748  INFO 22596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-05-15 18:41:17.012 DEBUG 22596 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-05-15 18:41:17.012 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.mapper.PostMapper.selectJingPost     : ==>  Preparing: SELECT * FROM t_post where tag = 1 order by id desc 
+2020-05-15 18:41:17.012 DEBUG 22596 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-05-15 18:41:17.031 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.mapper.PostMapper.selectJingPost     : ==> Parameters: 
+2020-05-15 18:41:17.031 DEBUG 22596 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-05-15 18:41:17.031 DEBUG 22596 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-05-15 18:41:17.044 DEBUG 22596 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-05-15 18:41:17.046 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:17.046 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:17.046 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:41:17.046 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:41:17.048 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.048 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.049 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.049 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.049 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:41:17.049 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:41:17.051 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.051 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.054 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:17.054 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:17.054 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:41:17.054 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:41:17.056 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.056 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.057 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.057 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.057 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-05-15 18:41:17.057 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:41:17.059 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.060 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.062 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:17.062 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:41:17.063 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.064 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-05-15 18:41:17.064 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.065 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.065 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:41:17.066 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.067 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.068 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:17.068 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:41:17.071 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.071 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.072 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:41:17.072 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.072 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:41:17.074 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.074 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.074 DEBUG 22596 --- [http-nio-8080-exec-9] c.t.mapper.PostMapper.selectJingPost     : <==      Total: 4
+2020-05-15 18:41:17.075 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.075 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:41:17.077 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.078 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.078 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:41:17.080 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.081 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.082 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:41:17.083 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.084 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:17.085 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-05-15 18:41:17.087 DEBUG 22596 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:17.088 DEBUG 22596 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-05-15 18:41:21.895 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.mapper.PostMapper.selectJingPost     : ==>  Preparing: SELECT * FROM t_post where tag = 1 order by id desc 
+2020-05-15 18:41:21.896 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.mapper.PostMapper.selectJingPost     : ==> Parameters: 
+2020-05-15 18:41:21.904 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:21.905 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:41:21.907 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.908 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.910 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:41:21.914 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.915 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:21.915 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:41:21.920 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.921 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.921 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:41:21.923 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.926 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:21.926 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:41:21.929 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.931 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.931 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:41:21.933 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.935 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.935 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:41:21.939 DEBUG 22596 --- [http-nio-8080-exec-5] com.tommy.mapper.PlanMapper.selectByUid  : ==>  Preparing: SELECT * FROM t_plan where user_uid=? order by startDate 
+2020-05-15 18:41:21.939 DEBUG 22596 --- [http-nio-8080-exec-3] c.t.mapper.CommentMapper.selectByPidPC   : ==>  Preparing: SELECT * FROM t_comment where post_id=? and parent_comment_cid is null order by createDate desc 
+2020-05-15 18:41:21.940 DEBUG 22596 --- [http-nio-8080-exec-10] c.tommy.mapper.UserMapper.selectByName   : ==>  Preparing: SELECT * FROM t_user where uname=? 
+2020-05-15 18:41:21.940 DEBUG 22596 --- [http-nio-8080-exec-1] c.t.mapper.PostMapper.selectByuserId     : ==>  Preparing: SELECT * FROM t_post where user_uid=? order by id desc 
+2020-05-15 18:41:21.940 DEBUG 22596 --- [http-nio-8080-exec-2] c.t.m.PostMapper.selectByPrimaryKey      : ==>  Preparing: SELECT * FROM t_post where id=? 
+2020-05-15 18:41:21.940 DEBUG 22596 --- [http-nio-8080-exec-5] com.tommy.mapper.PlanMapper.selectByUid  : ==> Parameters: 19(Integer)
+2020-05-15 18:41:21.940 DEBUG 22596 --- [http-nio-8080-exec-3] c.t.mapper.CommentMapper.selectByPidPC   : ==> Parameters: 78(Integer)
+2020-05-15 18:41:21.940 DEBUG 22596 --- [http-nio-8080-exec-1] c.t.mapper.PostMapper.selectByuserId     : ==> Parameters: 19(Integer)
+2020-05-15 18:41:21.940 DEBUG 22596 --- [http-nio-8080-exec-2] c.t.m.PostMapper.selectByPrimaryKey      : ==> Parameters: 78(Integer)
+2020-05-15 18:41:21.940 DEBUG 22596 --- [http-nio-8080-exec-10] c.tommy.mapper.UserMapper.selectByName   : ==> Parameters: admin(String)
+2020-05-15 18:41:21.941 DEBUG 22596 --- [http-nio-8080-exec-5] com.tommy.mapper.PlanMapper.selectByUid  : <==      Total: 0
+2020-05-15 18:41:21.942 DEBUG 22596 --- [http-nio-8080-exec-10] c.tommy.mapper.UserMapper.selectByName   : <==      Total: 1
+2020-05-15 18:41:21.942 DEBUG 22596 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.942 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.942 DEBUG 22596 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:41:21.943 DEBUG 22596 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:21.943 DEBUG 22596 --- [http-nio-8080-exec-4] c.t.mapper.PostMapper.selectJingPost     : <==      Total: 4
+2020-05-15 18:41:21.943 DEBUG 22596 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:21.943 DEBUG 22596 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:41:21.943 DEBUG 22596 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:41:21.944 DEBUG 22596 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.944 DEBUG 22596 --- [http-nio-8080-exec-2] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.944 DEBUG 22596 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.945 DEBUG 22596 --- [http-nio-8080-exec-3] c.t.mapper.CommentMapper.selectByPidPC   : <==      Total: 1
+2020-05-15 18:41:21.945 DEBUG 22596 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.945 DEBUG 22596 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.945 DEBUG 22596 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:41:21.945 DEBUG 22596 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:41:21.947 DEBUG 22596 --- [http-nio-8080-exec-2] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.947 DEBUG 22596 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.947 DEBUG 22596 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-05-15 18:41:21.948 DEBUG 22596 --- [http-nio-8080-exec-1] c.t.mapper.PostMapper.selectByuserId     : <==      Total: 1
+2020-05-15 18:41:21.948 DEBUG 22596 --- [http-nio-8080-exec-2] c.t.m.PostMapper.selectByPrimaryKey      : <==      Total: 1
+2020-05-15 18:41:21.948 DEBUG 22596 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-05-15 18:41:21.951 DEBUG 22596 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.951 DEBUG 22596 --- [http-nio-8080-exec-9] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-05-15 18:41:21.951 DEBUG 22596 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 19(Integer)
+2020-05-15 18:41:21.951 DEBUG 22596 --- [http-nio-8080-exec-9] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-05-15 18:41:21.954 DEBUG 22596 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-05-15 18:41:21.957 DEBUG 22596 --- [http-nio-8080-exec-9] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-05-15 18:41:21.962 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:21.963 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-05-15 18:41:21.964 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.965 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.965 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-05-15 18:41:21.967 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.968 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:21.968 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-05-15 18:41:21.970 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.970 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.970 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-05-15 18:41:21.971 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.972 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.972 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-05-15 18:41:21.974 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.975 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-05-15 18:41:21.975 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-05-15 18:41:21.977 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.977 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.977 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-05-15 18:41:21.979 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.979 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.979 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-05-15 18:41:21.980 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.981 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.981 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-05-15 18:41:21.983 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.984 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.984 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-05-15 18:41:21.985 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.986 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-05-15 18:41:21.986 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-05-15 18:41:21.987 DEBUG 22596 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-05-15 18:41:21.988 DEBUG 22596 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9

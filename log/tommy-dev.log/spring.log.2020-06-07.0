@@ -1,0 +1,461 @@
+2020-06-07 20:50:02.529  INFO 19556 --- [main] com.tommy.TommyApplication               : Starting TommyApplication on LAPTOP-J6PA615L with PID 19556 (D:\InterlliJ IDEA WorkSpace\tommy\target\classes started by tommy in D:\InterlliJ IDEA WorkSpace\tommy)
+2020-06-07 20:50:02.535 DEBUG 19556 --- [main] com.tommy.TommyApplication               : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-07 20:50:02.535  INFO 19556 --- [main] com.tommy.TommyApplication               : The following profiles are active: dev
+2020-06-07 20:50:03.166  INFO 19556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-07 20:50:03.188  INFO 19556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2020-06-07 20:50:03.742  INFO 19556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-07 20:50:03.749  INFO 19556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-07 20:50:03.749  INFO 19556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-07 20:50:03.862  INFO 19556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-07 20:50:03.863  INFO 19556 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1282 ms
+2020-06-07 20:50:03.971  INFO 19556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-07 20:50:04.247  INFO 19556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-07 20:50:04.283  INFO 19556 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-07 20:50:04.346  INFO 19556 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-06-07 20:50:04.468  INFO 19556 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-07 20:50:04.558  INFO 19556 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-07 20:50:04.698  INFO 19556 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-07 20:50:04.704  INFO 19556 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-07 20:50:04.888  WARN 19556 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-07 20:50:05.060  INFO 19556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-07 20:50:05.150  INFO 19556 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-06-07 20:50:05.322  INFO 19556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-07 20:50:05.324  INFO 19556 --- [main] com.tommy.TommyApplication               : Started TommyApplication in 3.439 seconds (JVM running for 4.947)
+2020-06-07 20:50:24.101  INFO 19556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-07 20:50:24.102  INFO 19556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-07 20:50:24.111  INFO 19556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-06-07 20:50:29.282 DEBUG 19556 --- [http-nio-8080-exec-5] com.tommy.mapper.UserMapper.selectAdmin  : ==>  Preparing: SELECT * FROM t_user where uname=? and password=? and ifadmin=? 
+2020-06-07 20:50:29.295 DEBUG 19556 --- [http-nio-8080-exec-5] com.tommy.mapper.UserMapper.selectAdmin  : ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String), 1(Integer)
+2020-06-07 20:50:29.316 DEBUG 19556 --- [http-nio-8080-exec-5] com.tommy.mapper.UserMapper.selectAdmin  : <==      Total: 1
+2020-06-07 20:50:30.391 DEBUG 19556 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-07 20:50:30.392 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-07 20:50:30.392 DEBUG 19556 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-07 20:50:30.392 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-07 20:50:30.392 DEBUG 19556 --- [http-nio-8080-exec-3] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-07 20:50:30.392 DEBUG 19556 --- [http-nio-8080-exec-3] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-07 20:50:30.395 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-07 20:50:30.396 DEBUG 19556 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-07 20:50:30.404 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 20:50:30.405 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-07 20:50:30.406 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.407 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 20:50:30.407 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-07 20:50:30.409 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.410 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 20:50:30.410 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-07 20:50:30.412 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.412 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 20:50:30.412 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-07 20:50:30.413 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.416 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 20:50:30.416 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-07 20:50:30.419 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.420 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 20:50:30.421 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-07 20:50:30.422 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.422 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 20:50:30.422 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-07 20:50:30.423 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.424 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 20:50:30.425 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-07 20:50:30.426 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.427 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 20:50:30.427 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-07 20:50:30.428 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.429 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 20:50:30.429 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-07 20:50:30.430 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.431 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 20:50:30.431 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-07 20:50:30.433 DEBUG 19556 --- [http-nio-8080-exec-3] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 20:50:30.434 DEBUG 19556 --- [http-nio-8080-exec-3] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-07 21:10:53.176 DEBUG 19556 --- [http-nio-8080-exec-6] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-07 21:10:53.176 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-07 21:10:53.177 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-07 21:10:53.177 DEBUG 19556 --- [http-nio-8080-exec-6] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-07 21:10:53.177 DEBUG 19556 --- [http-nio-8080-exec-8] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-07 21:10:53.177 DEBUG 19556 --- [http-nio-8080-exec-8] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-07 21:10:53.180 DEBUG 19556 --- [http-nio-8080-exec-6] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-07 21:10:53.180 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-07 21:10:53.186 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:10:53.186 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-07 21:10:53.187 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.188 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:10:53.188 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-07 21:10:53.189 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.190 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:10:53.191 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-07 21:10:53.192 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.192 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:10:53.193 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-07 21:10:53.194 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.195 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:10:53.195 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-07 21:10:53.196 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.197 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:10:53.197 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-07 21:10:53.198 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.199 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:10:53.200 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-07 21:10:53.202 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.203 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:10:53.203 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-07 21:10:53.204 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.205 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:10:53.205 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-07 21:10:53.206 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.208 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:10:53.208 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-07 21:10:53.209 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.210 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:10:53.210 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-07 21:10:53.211 DEBUG 19556 --- [http-nio-8080-exec-8] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:10:53.212 DEBUG 19556 --- [http-nio-8080-exec-8] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-07 21:16:08.387 DEBUG 19556 --- [http-nio-8080-exec-3] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-07 21:16:08.387 DEBUG 19556 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-07 21:16:08.387 DEBUG 19556 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-07 21:16:08.388 DEBUG 19556 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-07 21:16:08.388 DEBUG 19556 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-07 21:16:08.388 DEBUG 19556 --- [http-nio-8080-exec-3] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-07 21:16:08.389 DEBUG 19556 --- [http-nio-8080-exec-3] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-07 21:16:08.389 DEBUG 19556 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-07 21:16:08.398 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:08.398 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-07 21:16:08.400 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.400 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:08.400 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-07 21:16:08.401 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.402 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:08.402 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-07 21:16:08.403 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.404 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:08.404 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-07 21:16:08.405 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.406 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:08.406 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-07 21:16:08.408 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.409 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:08.409 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-07 21:16:08.410 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.410 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:08.411 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-07 21:16:08.412 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.412 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:08.413 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-07 21:16:08.415 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.415 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:08.415 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-07 21:16:08.416 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.417 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:08.417 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-07 21:16:08.419 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.419 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:08.419 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-07 21:16:08.420 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:08.421 DEBUG 19556 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-07 21:16:09.088 DEBUG 19556 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-07 21:16:09.088 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-07 21:16:09.089 DEBUG 19556 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-07 21:16:09.089 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-07 21:16:09.089 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-07 21:16:09.089 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-07 21:16:09.090 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-07 21:16:09.090 DEBUG 19556 --- [http-nio-8080-exec-2] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-07 21:16:09.096 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:09.096 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-07 21:16:09.097 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.097 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:09.097 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-07 21:16:09.100 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.100 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:09.100 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-07 21:16:09.101 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.101 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:09.102 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-07 21:16:09.102 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.103 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:09.103 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-07 21:16:09.104 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.105 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:09.105 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-07 21:16:09.106 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.106 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:09.106 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-07 21:16:09.107 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.108 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:09.108 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-07 21:16:09.110 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.111 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:09.111 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-07 21:16:09.113 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.113 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:09.113 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-07 21:16:09.114 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.116 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:09.116 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-07 21:16:09.117 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:09.118 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-07 21:16:10.852 DEBUG 19556 --- [http-nio-8080-exec-8] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-07 21:16:10.852 DEBUG 19556 --- [http-nio-8080-exec-1] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-07 21:16:10.852 DEBUG 19556 --- [http-nio-8080-exec-4] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-07 21:16:10.853 DEBUG 19556 --- [http-nio-8080-exec-1] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-07 21:16:10.853 DEBUG 19556 --- [http-nio-8080-exec-8] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-07 21:16:10.853 DEBUG 19556 --- [http-nio-8080-exec-4] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-07 21:16:10.854 DEBUG 19556 --- [http-nio-8080-exec-8] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-07 21:16:10.854 DEBUG 19556 --- [http-nio-8080-exec-4] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-07 21:16:10.859 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:10.859 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-07 21:16:10.860 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.860 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:10.860 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-07 21:16:10.861 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.862 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:10.862 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-07 21:16:10.863 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.863 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:10.863 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-07 21:16:10.864 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.865 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:10.865 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-07 21:16:10.867 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.867 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:10.867 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-07 21:16:10.868 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.869 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:10.869 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-07 21:16:10.870 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.871 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:10.871 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-07 21:16:10.873 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.873 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:10.873 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-07 21:16:10.874 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.875 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:10.875 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-07 21:16:10.876 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.876 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:10.876 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-07 21:16:10.877 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:10.878 DEBUG 19556 --- [http-nio-8080-exec-1] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-07 21:16:17.062 DEBUG 19556 --- [http-nio-8080-exec-3] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-07 21:16:17.062 DEBUG 19556 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-07 21:16:17.062 DEBUG 19556 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-07 21:16:17.062 DEBUG 19556 --- [http-nio-8080-exec-3] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-07 21:16:17.062 DEBUG 19556 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-07 21:16:17.062 DEBUG 19556 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-07 21:16:17.063 DEBUG 19556 --- [http-nio-8080-exec-7] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-07 21:16:17.064 DEBUG 19556 --- [http-nio-8080-exec-3] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-07 21:16:17.068 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:17.068 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-07 21:16:17.070 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.070 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:17.070 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-07 21:16:17.071 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.072 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:17.072 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-07 21:16:17.074 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.074 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:17.074 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-07 21:16:17.075 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.076 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:17.076 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-07 21:16:17.078 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.078 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:17.078 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-07 21:16:17.079 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.080 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:17.080 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-07 21:16:17.081 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.081 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:17.081 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-07 21:16:17.082 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.083 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:17.083 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-07 21:16:17.084 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.084 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:17.084 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-07 21:16:17.085 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.085 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:17.085 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-07 21:16:17.086 DEBUG 19556 --- [http-nio-8080-exec-6] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:17.086 DEBUG 19556 --- [http-nio-8080-exec-6] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-07 21:16:18.046 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-07 21:16:18.047 DEBUG 19556 --- [http-nio-8080-exec-8] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-07 21:16:18.047 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-07 21:16:18.047 DEBUG 19556 --- [http-nio-8080-exec-8] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-07 21:16:18.048 DEBUG 19556 --- [http-nio-8080-exec-1] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-07 21:16:18.048 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-07 21:16:18.048 DEBUG 19556 --- [http-nio-8080-exec-1] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-07 21:16:18.048 DEBUG 19556 --- [http-nio-8080-exec-8] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-07 21:16:18.053 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:18.053 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-07 21:16:18.054 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.055 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:18.055 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-07 21:16:18.056 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.056 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:18.056 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-07 21:16:18.059 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.059 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:18.059 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-07 21:16:18.060 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.061 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:18.061 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-07 21:16:18.062 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.063 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:18.063 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-07 21:16:18.065 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.065 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:18.066 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-07 21:16:18.067 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.068 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:18.068 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-07 21:16:18.069 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.070 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:18.070 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-07 21:16:18.071 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.071 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:18.071 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-07 21:16:18.072 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.073 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:18.073 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-07 21:16:18.075 DEBUG 19556 --- [http-nio-8080-exec-1] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:18.076 DEBUG 19556 --- [http-nio-8080-exec-1] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-07 21:16:22.331  WARN 19556 --- [http-nio-8080-exec-7] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [499] milliseconds.
+2020-06-07 21:16:29.263 DEBUG 19556 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-07 21:16:29.264 DEBUG 19556 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-07 21:16:29.265 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-07 21:16:29.265 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.UserMapper.selectAllUser  : ==>  Preparing: SELECT * FROM t_user order by uid desc 
+2020-06-07 21:16:29.265 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-07 21:16:29.265 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.UserMapper.selectAllUser  : ==> Parameters: 
+2020-06-07 21:16:29.265 DEBUG 19556 --- [http-nio-8080-exec-2] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-07 21:16:29.267 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.UserMapper.selectAllUser  : <==      Total: 12
+2020-06-07 21:16:29.271 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:29.271 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-07 21:16:29.272 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.272 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:29.272 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-07 21:16:29.273 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.274 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:29.274 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-07 21:16:29.274 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.275 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:29.275 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-07 21:16:29.275 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.276 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:29.276 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-07 21:16:29.277 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.277 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:16:29.277 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-07 21:16:29.278 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.278 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:29.279 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-07 21:16:29.280 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.281 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:29.281 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-07 21:16:29.287 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.287 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:29.287 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-07 21:16:29.289 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.290 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:29.290 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-07 21:16:29.291 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.292 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:16:29.292 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-07 21:16:29.292 DEBUG 19556 --- [http-nio-8080-exec-9] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:16:29.293 DEBUG 19556 --- [http-nio-8080-exec-9] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-07 21:26:44.907 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : ==>  Preparing: SELECT * FROM t_type 
+2020-06-07 21:26:44.908 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.mapper.PostMapper.selectJingPost     : ==>  Preparing: SELECT * FROM t_post where tag = 1 order by id desc 
+2020-06-07 21:26:44.908 DEBUG 19556 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : ==>  Preparing: SELECT * FROM t_post order by id desc 
+2020-06-07 21:26:44.908 DEBUG 19556 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : ==> Parameters: 
+2020-06-07 21:26:44.908 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.mapper.PostMapper.selectJingPost     : ==> Parameters: 
+2020-06-07 21:26:44.908 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : ==> Parameters: 
+2020-06-07 21:26:44.909 DEBUG 19556 --- [http-nio-8080-exec-5] c.tommy.mapper.TypeMapper.selectAllType  : <==      Total: 4
+2020-06-07 21:26:44.912 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:26:44.912 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-07 21:26:44.913 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.913 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.913 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-07 21:26:44.913 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:26:44.913 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-07 21:26:44.914 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.914 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.914 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.914 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:26:44.914 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 19(Integer)
+2020-06-07 21:26:44.914 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 4(Integer)
+2020-06-07 21:26:44.915 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.915 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.915 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.915 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-07 21:26:44.915 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:26:44.916 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-07 21:26:44.916 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.916 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.916 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.916 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:26:44.916 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 32(Integer)
+2020-06-07 21:26:44.916 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 3(Integer)
+2020-06-07 21:26:44.917 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.917 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.917 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.917 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-07 21:26:44.917 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.917 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 33(Integer)
+2020-06-07 21:26:44.918 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.918 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.918 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.918 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_type where tid=? 
+2020-06-07 21:26:44.918 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-07 21:26:44.918 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : ====> Parameters: 1(Integer)
+2020-06-07 21:26:44.919 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.919 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.TypeMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.919 DEBUG 19556 --- [http-nio-8080-exec-10] c.t.mapper.PostMapper.selectJingPost     : <==      Total: 4
+2020-06-07 21:26:44.919 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.919 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 34(Integer)
+2020-06-07 21:26:44.920 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.920 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.920 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 35(Integer)
+2020-06-07 21:26:44.921 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.921 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.921 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 36(Integer)
+2020-06-07 21:26:44.922 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.923 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.923 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 37(Integer)
+2020-06-07 21:26:44.924 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.924 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====>  Preparing: SELECT * FROM t_user where uid=? 
+2020-06-07 21:26:44.924 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : ====> Parameters: 30(Integer)
+2020-06-07 21:26:44.926 DEBUG 19556 --- [http-nio-8080-exec-7] c.t.m.UserMapper.selectByPrimaryKey      : <====      Total: 1
+2020-06-07 21:26:44.926 DEBUG 19556 --- [http-nio-8080-exec-7] c.tommy.mapper.PostMapper.selectAllPost  : <==      Total: 9
+2020-06-07 21:26:48.987  INFO 19556 --- [http-nio-8080-exec-2] c.t.c.WebSocketServerController          : Connection error
+2020-06-07 21:26:48.992 ERROR 19556 --- [http-nio-8080-exec-2] o.a.t.websocket.pojo.PojoEndpointBase    : Failed to call onClose method of POJO end point for POJO of type [com.tommy.controller.WebSocketServerController]
+
+javax.websocket.DecodeException: Failed to decode path parameter value [undefined] to expected type [class java.lang.Integer]
+	at org.apache.tomcat.websocket.pojo.PojoMethodMapping.buildArgs(PojoMethodMapping.java:354)
+	at org.apache.tomcat.websocket.pojo.PojoMethodMapping.getOnCloseArgs(PojoMethodMapping.java:249)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.onClose(PojoEndpointBase.java:104)
+	at org.apache.tomcat.websocket.WsSession.fireEndpointOnClose(WsSession.java:555)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:501)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:459)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:446)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:440)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.handleOnOpenOrCloseError(PojoEndpointBase.java:92)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:79)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:64)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:133)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:914)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NumberFormatException: For input string: "undefined"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.valueOf(Integer.java:983)
+	at org.apache.tomcat.websocket.Util.coerceToType(Util.java:321)
+	at org.apache.tomcat.websocket.pojo.PojoMethodMapping.buildArgs(PojoMethodMapping.java:352)
+	... 18 common frames omitted
+
+2020-06-07 21:26:48.992  INFO 19556 --- [http-nio-8080-exec-2] c.t.c.WebSocketServerController          : Connection error

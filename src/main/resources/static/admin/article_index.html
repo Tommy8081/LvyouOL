@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>文章管理 - 驴友在线后台</title>
+    <link rel="stylesheet" href="./static/common/layui/css/layui.css">
+    <link rel="stylesheet" href="./static/admin/css/element-ui.css">
+    <link rel="stylesheet" href="./static/admin/css/style.css">
+    <script src="./static/common/layui/layui.js"></script>
+    <script src="./static/common/jquery-3.3.1.min.js"></script>
+    <style>
+        #search{
+          float: right;  
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--顶栏-->
+    <header>
+        <h1 v-text="webname"></h1>
+        <div class="breadcrumb">
+            <i class="layui-icon">&#xe715;</i>
+            <ul>
+                <li v-for="vo in address">
+                    <a  v-text="vo.name" :href="vo.url" ></a> <span>/</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main">
+        <!--左栏-->
+        <div class="left">
+            <ul class="cl" >
+                <!--顶级分类-->
+                <li v-for="vo,index in menu" :class="{hidden:vo.hidden}">
+                    <a href="javascript:;"  :class="{active:vo.active}"  @click="onActive(index)">
+                        <i class="layui-icon" v-html="vo.icon"></i>
+                        <span v-text="vo.name"></span>
+                        <i class="layui-icon arrow" v-show="vo.url.length==0">&#xe61a;</i> <i v-show="vo.active" class="layui-icon active">&#xe623;</i>
+                    </a>
+                    <!--子级分类-->
+                    <div v-for="vo2,index2 in vo.list">
+                        <a href="javascript:;" :class="{active:vo2.active}" @click="onActive(index,index2)" v-text="vo2.name"></a>
+                        <i v-show="vo2.active" class="layui-icon active">&#xe623;</i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--右侧-->
+        <div class="right">
+
+
+
+            <a href="article_add.html" class="layui-btn"><i class="layui-icon">&#xe654;</i>添加文章</a>
+           <div id="search" class="layui-inline">
+
+                <label class="layui-form-lable">文章标题：</label>
+                <div class="layui-input-inline">
+                   <input type="text" class="layui-input" ref="selectTitle" placeholder="文章关键字" width="10%">
+                </div>
+                <button class="layui-btn" @click="selectByTiele()"><i class="layui-icon">&#xe615;</i></button>
+            </div>
+            <table class="layui-table layui-form">
+                <colgroup>
+                    <col width="30">
+                    <col width="60">
+                    <col width="100">
+                    <col width="40">
+                    <col width="150">
+                    <col width="40">
+                    <col width="50">
+                    <col width="40">
+                    <col width="80">
+                    <col width="80">
+                    <col width="80">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>ID</th>
+                    <th>缩略图</th>
+                    <th>分类</th>
+                    <th>标题</th>
+                    <th>显示</th>
+                    <th>获赞数</th>
+                    <th>加精</th>
+                    <th>属于用户</th>
+                    <th>时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="(item,i) in post.slice((currpage-1)*eachpage,currpage*eachpage)" :id="i">
+                    <td>{{i+1}}</td>
+                    <td>{{item.id}}</td>
+                    <td><img v-bind:src="item.indexImg" height="50px"/></td>
+                    <td>{{item.type[0].tname}}</td>
+                    <td>{{item.title}}</td>
+                    <td><input type="checkbox" name="switch" lay-text="ON|OFF" lay-skin="switch" :checked="item.published" disabled></td>
+                    <td>{{item.zanN}}</td>
+                    <td><input type="checkbox" name="switch" lay-text="ON|OFF" lay-skin="switch" :checked="item.tag" disabled></td>
+                    <td>{{item.user[0].uname}}</td>
+                    <td>{{item.createDate}}</td>                   
+                    <td><a href="javascript:void(0);" @click="updatePostTZ(item)">修改</a> | <a class="del" href="javascript:void(0);" @click="deletePost(item.id,i)">删除</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                    <div id="test1"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+<script src="./static/admin/js/config.js"></script>
+<script src="./static/common/vue.min.js"></script>
+<script src="./static/common/axios.min.js"></script>
+<script src="./static/common/element-ui.js"></script>
+<script src="./static/admin/js/script.js"></script>
+</body>
+</html>
